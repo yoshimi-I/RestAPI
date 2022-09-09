@@ -1,0 +1,15 @@
+version: "3"
+services:
+  mysql:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: linux/amd64
+    container_name: java-mysql # コンテナ名
+    volumes:
+      - ./mysql/db:/var/lib/mysql # データ永続化
+    environment:
+      - MYSQL_ROOT_PASSWORD=password # パスワード設定
+      - TZ=Asia/Tokyo
+    ports:
+      - "3306:3306"
