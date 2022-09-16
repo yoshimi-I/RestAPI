@@ -11,4 +11,4 @@ CREATE TABLE `items` (
   `creat_time` datetime NOT NULL,
   `update_time` datetime NOT NULL,
   PRIMARY KEY  (`id`)
-) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) DEFAULT CHARET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
